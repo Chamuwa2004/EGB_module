@@ -1,5 +1,5 @@
 package com.auction.system;
-
+import jakarta.annotation.Resource;
 import jakarta.ejb.*;
 import jakarta.inject.Inject;
 import jakarta.jms.*;
