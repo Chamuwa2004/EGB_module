@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Auction System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Live Auctions</h1>
+    </header>
+
+    <main>
+        <section id="auction-items">
+            <h2>Auction Items</h2>
+            <!-- Auction items will be loaded here by JavaScript -->
+            <div class="item-placeholder">
+                <p>Loading auction items...</p>
+            </div>
+        </section>
+
+        <section id="bid-section">
+            <h2>Place Your Bid</h2>
+            <div id="current-highest-bid">
+                <p>Current Highest Bid: <span id="highest-bid-amount">$0.00</span></p>
+                <p>Auction Ends In: <span id="auction-timer">00:00:00</span></p>
+            </div>
+            <form id="bid-form">
+                <label for="bid-amount">Your Bid:</label>
+                <input type="number" id="bid-amount" name="bid-amount" min="1" step="0.01" required>
+                <button type="submit">Place Bid</button>
+            </form>
+            <div id="bid-status">
+                <!-- Bid status messages will appear here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Auction System</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

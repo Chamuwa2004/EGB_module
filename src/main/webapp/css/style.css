@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 1rem;
+    overflow: auto;
+}
+
+#auction-items, #bid-section {
+    background: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#auction-items h2, #bid-section h2 {
+    color: #333;
+}
+
+.item-placeholder, #current-highest-bid, #bid-form {
+    margin-bottom: 1rem;
+}
+
+#bid-form label {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+#bid-form input[type="number"], #bid-form button {
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+
+#bid-form input[type="number"] {
+    width: calc(100% - 120px); /* Adjust width as needed */
+    border: 1px solid #ddd;
+}
+
+#bid-form button {
+    background: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#bid-form button:hover {
+    background: #4cae4c;
+}
+
+#bid-status {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+}
+
+.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+.error {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
