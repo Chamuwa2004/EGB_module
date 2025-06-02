@@ -41,6 +41,13 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+         <dependency>
+    <groupId>jakarta.platform</groupId>
+    <artifactId>jakarta.jakartaee-api</artifactId>
+    <version>10.0.0</version> <!-- or 9.1.0 if using Java 11 -->
+    <scope>provided</scope>
+</dependency>
+
 
     <build>
         <finalName>OnlineAuctionSystem</finalName>
